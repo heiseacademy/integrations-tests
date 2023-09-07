@@ -24,20 +24,6 @@ public class Starship {
 
         Gson gson = new Gson();
         return  gson.fromJson(json, Starship.class);
-//        Starship starship = new Starship();
-//        starship.name = jsonMap.get("name").getAsString();
-//        starship.model = jsonMap.get("model").getAsString();
-//        starship.costInCredits = jsonMap.get("cost_in_credits").getAsString();
-//        starship.length = Double.parseDouble(jsonMap.get("length").getAsString());
-//        starship.maxAtmospheringSpeed = jsonMap.get("max_atmosphering_speed").getAsString();
-//        starship.crew = Integer.parseInt(jsonMap.get("crew").getAsString());
-//        starship.passengers = Integer.parseInt(jsonMap.get("passengers").getAsString());
-//        starship.cargoCapacity = jsonMap.get("cargo_capacity").getAsString();
-//        starship.consumables = jsonMap.get("consumables").getAsString();
-//        starship.hyperdriveRating = jsonMap.get("hyperdrive_rating").getAsDouble();
-//        starship.mglt = jsonMap.get("MGLT").getAsInt();
-//        starship.starshipClass = jsonMap.get("starship_class").getAsString();
-//        return starship;
     }
 
     public String getName() {
