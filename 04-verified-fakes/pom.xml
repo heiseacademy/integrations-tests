@@ -86,5 +86,24 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>verifyFakes</id>
+            <build>
+                <plugins>
+                    <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <groups>verifyFake</groups>
+                            <systemPropertyVariables>
+                                <swapi.base.url>https://swapi.dev</swapi.base.url>
+                            </systemPropertyVariables>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
 </project>
 
