@@ -19,7 +19,7 @@ public class PersonRepositoryTest {
     @BeforeEach
     void setup(){
         HikariConfig configuration = new HikariConfig();
-        configuration.setJdbcUrl("jdbc:h2:mem:test_mem;INIT=runscript from 'src/main/resources/database/init.sql'");
+        configuration.setJdbcUrl("jdbc:tc:postgresql:16:///dbschema?TC_INITSCRIPT=database/init.sql");
         DataSource dataSource = new HikariDataSource(configuration);
         repositoryUnderTest = new PersonRepository(dataSource);
     }
